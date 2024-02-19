@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BB-Code Editor</title>
+</head>
+<body>
+
+<div class="editor-container">
+  <textarea id="editor" placeholder="Type your text..."></textarea>
+  <div class="toolbar">
+    <button onclick="insertTag('b')">Bold</button>
+    <button onclick="insertTag('i')">Italic</button>
+    <button onclick="insertTag('u')">Underline</button>
+    <div class="color-picker">
+      <label for="colorPicker">Color:</label>
+      <input type="color" id="colorPicker" onchange="applyColor()">
+      <button onclick="applyColor()">Apply Color</button>
+    </div>
+    <button onclick="preview()">Preview</button>
+  </div>
+  <div class="preview-container">
+    <h2>Preview</h2>
+    <div id="preview"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
